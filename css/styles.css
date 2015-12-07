@@ -1,0 +1,202 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: homi;
+  src: url(fonts/regular.ttf);
+}
+
+@font-face {
+  font-family: chardons;
+  src: url(fonts/Chardons.ttf);
+}
+
+@font-face {
+  font-family: moderna;
+  src: url(fonts/MODERNA_.ttf);
+}
+
+
+
+body {
+  font-family: Tahoma;
+}
+
+#intro {
+  background-image:
+    linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+    ),
+    url("img/bridge2.jpg");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  height: 900px;
+  margin: -10px;
+}
+
+
+/*navbar section*/
+/*more here*/
+
+.nav-bar {
+  color: white;
+  float: right;
+}
+
+.nav-bar li {
+  display: inline;
+  margin-right: 35px;
+  font-size: 1em;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.regular-link a:hover {
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 5px;
+  -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition:.5s;
+}
+
+#sign-in {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: white;
+  padding: 10px;
+}
+
+#sign-up {
+  background-color: #ffcc66;
+  border-radius: 5px;
+  border-color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#sign-up a {
+  color: black;
+}
+
+#sign-in a:hover {
+  color: black;
+  -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition:.5s;
+}
+
+
+#sign-up:hover {
+  background-color: #fff;
+  -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition:.5s;
+}
+
+#sign-in:hover {
+  background-color: #fff;
+  -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition:.5s;
+}
+
+/*title stuff*/
+
+.motto {
+  font-size: 60%;
+  font-weight: normal;
+}
+
+
+.title {
+  position: relative; /* or absolute */
+  text-align: center;
+  margin-top: 315px;
+  font-weight: bold;
+  color: white;
+  font-size: 300%;
+}
+
+#header {
+  margin-bottom: -30px;
+  font-family: moderna;
+}
+
+
+
+/*second stuff*/
+
+#second {
+  padding: 50px 250px 0px 250px;
+  text-align: center;
+  height: 400px;
+}
+
+#second h1 {
+  font-size: 300%;
+}
+
+#second p {
+  font-size: 125%;
+  color: #333333;
+  line-height: 30px;
+}
+
+/*third stuff*/
+
+#third {
+  padding: 50px 250px 0px 250px;
+  height: 400px;
+  background: #f2f2f2;
+}
+
+#third h1 {
+  font-size: 300%;
+}
+
+#third p {
+  font-size: 125%;
+  color: #333333;
+  line-height: 30px;
+}
+
+#third-left {
+  float: left;
+  width: 500px;
+  display: inline-block;
+}
+
+#third-right {
+  float: right;
+  width: 250px;
+  display: inline-block;
+
+}
+
+#third-right img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
